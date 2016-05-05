@@ -1,0 +1,910 @@
+/* --------------------------------------------------------------------------
+ * Projet         : CREATIVES Template
+ *
+ * file           : style.css
+ * Desc           : 
+ * Version        : 
+ * Date           : 
+ * Author         : Eric DUTOIT
+ * Author URI     : 
+ * Email          : 
+ *
+ * -------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------
+ *  CREATIVES - Table of Content
+
+
+  1 - Fonts-faces
+  2 - Glyph-icon
+  3 - General  
+  4 - Navigation
+  5 - Header
+  6 - About
+  7 - News   
+  8 - Blog
+  9 - Action
+ 10 - Features
+ 11 - Team
+ 12 - Contact
+ 13 - Footer
+ 14 - Media Queries
+
+
+ * -------------------------------------------------------------------------- */
+
+
+/******************************* 
+    1 - FONTS-FACES
+********************************/
+
+@font-face {
+	font-family: 'gotham_boldregular';
+	src: url('../fonts/gotham-bold-webfont.eot');
+	src: url('../fonts/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gotham-bold-webfont.woff2') format('woff2'), url('../fonts/gotham-bold-webfont.woff') format('woff'), url('../fonts/gotham-bold-webfont.ttf') format('truetype'), url('../fonts/gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gotham_bookregular';
+	src: url('../fonts/gotham-book-webfont.eot');
+	src: url('../fonts/gotham-book-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gotham-book-webfont.woff2') format('woff2'), url('../fonts/gotham-book-webfont.woff') format('woff'), url('../fonts/gotham-book-webfont.ttf') format('truetype'), url('../fonts/gotham-book-webfont.svg#gotham_bookregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gotham_mediumregular';
+	src: url('../fonts/gotham-medium-webfont.eot');
+	src: url('../fonts/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gotham-medium-webfont.woff2') format('woff2'), url('../fonts/gotham-medium-webfont.woff') format('woff'), url('../fonts/gotham-medium-webfont.ttf') format('truetype'), url('../fonts/gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gotham_lightitalic';
+	src: url('../fonts/gotham-lightitalic-webfont.eot');
+	src: url('../fonts/gotham-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gotham-lightitalic-webfont.woff2') format('woff2'), url('../fonts/gotham-lightitalic-webfont.woff') format('woff'), url('../fonts/gotham-lightitalic-webfont.ttf') format('truetype'), url('../fonts/gotham-lightitalic-webfont.svg#gotham_lightitalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gotham_lightregular';
+	src: url('../fonts/gotham-light-webfont.eot');
+	src: url('../fonts/gotham-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gotham-light-webfont.woff2') format('woff2'), url('../fonts/gotham-light-webfont.woff') format('woff'), url('../fonts/gotham-light-webfont.ttf') format('truetype'), url('../fonts/gotham-light-webfont.svg#gotham_lightregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/******************************* 
+    2 - GLYPH-ICON
+********************************/
+
+.glyph {
+	display: inline-block;
+	margin-top: 1em;
+	text-align: left;
+	vertical-align: top;
+	margin-bottom: 32px;
+}
+
+.glyph .glyph-icon {
+	padding: 0px;
+	display: block;
+	font-family: "Flaticon";
+	font-size: 64px;
+	line-height: 1;
+}
+
+.glyph .glyph-icon:before {
+	font-size: 64px;
+}
+
+
+/******************************* 
+    3 - GENERAL
+********************************/
+
+body {
+	font-family: 'gotham_lightregular', sans-serif;
+	/*text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;*/
+}
+
+p {
+	font-size: 1em;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-black {
+	color: #000;
+}
+
+.center-img {
+	display: inline-block;
+	padding-left: auto;
+	padding-right: auto
+}
+
+.section {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	height: 460px;
+}
+
+
+/******************************* 
+    4 - NAVIGATION
+********************************/
+
+#menu {
+	padding: 0px;
+	transition: all 0.8s;
+}
+
+#menu.navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+	border-color: rgba(231, 231, 231, .5);
+}
+
+#menu.navbar-default .navbar-nav > li > a {
+	color: #c4c4c4;
+	font-size: 16px;
+	font-family: 'gotham_bookregular', sans-serif;
+	letter-spacing: 0px;
+	padding-top: 43px;
+	padding-bottom: 50px;
+}
+
+#menu.navbar-default .navbar-nav > li > a:hover {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav >li >a:active {
+	color: rgb(17, 116, 158);
+}
+
+.on {
+	background-color: rgba(0, 0, 0, 1) !important;
+	border-color: rgba(0, 0, 0, 0) !important;
+	padding: 0px !important;
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+	filter: progid: DXImageTransform.Microsoft.Shadow(color=#000000, Direction=180, Strength=5);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #fff !important;
+	background-color: transparent;
+	border-bottom: 5px;
+	padding-bottom: 45px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(17, 116, 158);
+}
+
+.navbar-default .navbar-nav > a:active {
+	color: #fff;
+	background-color: transparent;
+}
+
+#menu img {
+	padding-top: 6px;
+}
+
+.navbar-toggle {
+	border-radius: 0;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: rgb(17, 116, 158);
+	border-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
+}
+
+
+/******************************* 
+    5 - HEADER
+********************************/
+
+#iu8-header {
+	height: 100vh;
+	background-color: rgb(124, 124, 124);
+	background-image: url(../img/bg-header.jpg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	position: relative;
+	padding-left: auto;
+	padding-right: auto;
+}
+
+#intro {
+	position: absolute;
+	width: 100%;
+	top: 60%;
+	transform: translateY(-50%);
+}
+
+#title h1 {
+	color: #fff;
+	font-family: 'gotham_boldregular', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 11em;
+	line-height: 1em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#title h2 {
+	font-family: 'gotham_mediumregular', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.8em;
+	letter-spacing: 2vh;
+	padding-left: 20px;
+	line-height: 1em;
+	color: rgb(17, 116, 158);
+	margin-bottom: 118px;
+}
+
+#header-scroll {
+	font-family: 'open sans', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	color: #fff;
+}
+
+#header-scroll a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#header-scroll i {
+	font-size: 22px;
+	color: #fff;
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 18px auto;
+	padding: 18px 0px;
+	border: 2px solid #fff;
+	border-radius: 32px;
+}
+
+
+/******************************* 
+    6 - ABOUT
+********************************/
+
+#about {
+	min-height: 738px;
+	background-color: rgb(17, 116, 158);
+	color: #fff;
+}
+
+#about h6 {
+	color: rgba( 255, 255, 255, 0.2);
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1em;
+	text-align: center;
+	font-size: 17.5em;
+	font-weight: 700;
+	margin-top: 58px;
+	margin-bottom: 0px;
+	z-index: 4;
+}
+
+#about h1 {
+	font-family: 'gotham_bookregular', sans-serif;
+	text-transform: uppercase;
+	line-height: 1em;
+	text-align: center;
+	font-size: 2.5em;
+	position: relative;
+	margin-top: -132px;
+	margin-bottom: 140px;
+	z-index: 3;
+}
+
+#about h3 {
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-family: 'gotham_bookregular', sans-serif;
+	line-height: 1em;
+	text-align: center;
+	font-size: 1.2em;
+	margin-bottom: 24px;
+}
+
+#about p {
+	color: rgb(255, 255, 255);
+	font-family: 'gotham_lightregular', sans-serif;
+	line-height: 1.8em;
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.about-icon i {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: block;
+	width: 130px;
+	height: 130px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 24px;
+	padding: 40px 0px;
+	border-radius: 65px;
+	font-size: 34px;
+}
+
+
+/******************************* 
+    7 - NEWS
+********************************/
+
+.half-section-left,
+.half-section-right {
+	position: relative;
+}
+
+.half-section-right .section-bg {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background-image: url(../img/bg-news-1.jpg);
+	background-position: center center!important;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+}
+
+.half-section-left .section-bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background-image: url(../img/bg-news-2.jpg);
+	background-position: center center!important;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+}
+
+.gray-bg {
+	background-color: #f6f6f6;
+}
+
+.black-bg {
+	background-color: rgb(33, 34, 33)
+}
+
+.bg6 {
+	background-image: url(../img/bg-news-1.jpg)!important;
+}
+
+.bg7 {
+	background-image: url(../img/bg-news-2.jpg)!important;
+}
+
+#news1,
+#news2 {
+	height: 500px;
+}
+
+#news1 {
+	text-align: left;
+}
+
+#news1 h2,
+#news2 h2 {
+	font-family: 'gotham_bookregular', sans-serif;
+	font-size: 1.6em;
+	margin-top: .6em;
+	margin-bottom: 1.6em;
+}
+
+#news1 p,
+#news2 p {
+	line-height: 1.8em;
+}
+
+#blog {
+	min-height: 1018px;
+	background-color: #fff;
+}
+
+
+/******************************* 
+    8 - BLOG
+********************************/
+
+#blog h6 {
+	color: rgba( 0, 0, 0, 0.2);
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1em;
+	text-align: center;
+	font-size: 17.5em;
+	font-weight: 700;
+	margin-top: 52px;
+	margin-bottom: 0px;
+	z-index: 4;
+}
+
+#blog h1 {
+	font-family: 'gotham_mediumregular', sans-serif;
+	text-transform: uppercase;
+	line-height: 1em;
+	text-align: center;
+	font-size: 2.5em;
+	position: relative;
+	margin-top: -134px;
+	margin-bottom: 112px;
+	z-index: 3;
+}
+
+#blog h2 {
+	font-family: 'gotham_bookregular', sans-serif;
+	line-height: 1em;
+	text-align: center;
+	font-size: 1.8em;
+	margin-bottom: 80px;
+}
+
+#blog h3 {
+	font-family: 'gotham_mediumregular', sans-serif;
+	color: rgb(17, 116, 158);
+	text-transform: uppercase;
+	line-height: 1em;
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+#blog p {
+	font-family: 'gotham_lightregular', sans-serif;
+	line-height: 1.7em;
+	text-align: center;
+	font-size: 1em;
+	margin-bottom: 32px;
+}
+
+#blog a {
+	text-decoration: none;
+	color: #000;
+}
+
+#blog img {
+	width: 100%;
+}
+
+
+/******************************* 
+    9 - ACTION
+********************************/
+
+#action {
+	min-height: 354px;
+	background-color: rgb(17, 116, 158);
+	display: flex;
+	align-items: center;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+#action p {
+	font-family: 'gotham_lightregular', sans-serif;
+	line-height: 1.8em;
+	margin-bottom: 32px;
+}
+
+
+/******************************* 
+    10 - FEATURES
+********************************/
+
+#feature {
+	min-height: 848px;
+	background-color: rgb(33, 34, 33);
+	background-image: url(../img/bg-feature.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex-direction: row;
+	align-items: center;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+#feature h3 {
+	margin-bottom: 32px;
+}
+
+#feature p {
+	line-height: 1.8em;
+	margin-bottom: 64px;
+}
+
+#feature .bar {
+	background-color: rgb(17, 116, 158);
+	padding-left: 15px;
+	line-height: 2.8em;
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+#feature .bar[title$="3"] {
+	margin-bottom: 32px;
+}
+
+#feature img {
+	padding: 32px 0 32px 0;
+}
+
+#smartphone {
+	text-align: center;
+}
+
+
+/******************************* 
+    11 - TEAM
+********************************/
+
+#team {
+	min-height: 944px;
+	background-color: #fff;
+}
+
+#team h6 {
+	color: rgba( 0, 0, 0, 0.2);
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1em;
+	text-align: center;
+	font-size: 17.5em;
+	font-weight: 700;
+	margin-top: 24px;
+	margin-bottom: 0px;
+	z-index: 4;
+}
+
+#team h1 {
+	font-family: 'gotham_mediumregular', sans-serif;
+	text-transform: uppercase;
+	line-height: 1em;
+	text-align: center;
+	font-size: 2.5em;
+	position: relative;
+	margin-top: -128px;
+	margin-bottom: 140px;
+	z-index: 3;
+}
+
+#team h2 {
+	font-family: 'gotham_bookregular', sans-serif;
+	line-height: 1em;
+	text-align: center;
+	font-size: 1.8em;
+	margin-bottom: 80px;
+}
+
+#team h3 {
+	font-family: 'gotham_mediumregular', sans-serif;
+	text-transform: uppercase;
+	color: rgb(17, 116, 158);
+	text-align: center;
+	font-size: 1.3em;
+}
+
+#team p {
+	font-family: 'gotham_mediumregular', sans-serif;
+}
+
+#avatar {
+	z-index: 1;
+}
+
+#team img {
+	width: 100%;
+}
+
+.text-team {
+	background-color: #fff;
+	width: 100%;
+	z-index: 2;
+}
+
+
+/******************************* 
+    12 - CONTACT
+********************************/
+
+#contact {
+	min-height: 848px;
+	background-color: rgb(33, 34, 33);
+	background-image: url(../img/bg-contact.jpg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+#contact h6 {
+	color: rgba( 255, 255, 255, 0.2);
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1em;
+	text-align: center;
+	font-size: 17.5em;
+	font-weight: 700;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	z-index: 4;
+}
+
+#contact h1 {
+	font-family: 'gotham_bookregular', sans-serif;
+	text-transform: uppercase;
+	line-height: 1em;
+	text-align: center;
+	font-size: 2.2em;
+	position: relative;
+	margin-top: -128px;
+	margin-bottom: 152px;
+	z-index: 3;
+}
+
+#contact h2 {
+	font-family: 'gotham_bookregular', sans-serif;
+	line-height: 1em;
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 80px;
+}
+
+#contact h3 {
+	text-transform: uppercase;
+	color: rgb(17, 116, 158);
+}
+
+#contact .form-control {
+	display: block;
+	width: 100%;
+	padding: 12px 12px;
+	font-size: 16px;
+	line-height: 2;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+#contact .btn {
+	padding: 12px 5% 12px 5%;
+	font-family: 'gotham_bookregular', sans-serif;
+	color: #fff;
+	background-color: rgb(17, 116, 158);
+	text-transform: uppercase;
+	font-size: 1.8em;
+	border-radius: 0px;
+	border: 0px;
+}
+
+#map-container {
+	width: 100%;
+	height: 331px;
+	margin: 0;
+	padding: 0;
+}
+
+
+/******************************* 
+    13 - FOOTER
+********************************/
+
+#footer {
+	height: 113PX;
+	background-color: rgb(33, 34, 33);
+	display: flex;
+}
+
+#footer div {
+	margin: auto;
+}
+
+#copyright {
+	margin-top: 6px;
+}
+
+#design {
+	text-align: right;
+	text-decoration: none;
+	color: #fff;
+	vertical-align: bottom;
+}
+
+#bee {
+	vertical-align: bottom;
+}
+
+
+/******************************* 
+    14 - MEDIA QUERIES
+********************************/
+
+@media (min-width: 1024px) {
+	.container > .navbar-collapse {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+}
+
+@media (max-width: 1024px) {
+	#title h1 {
+		font-size: 6.5em;
+		line-height: 1em;
+		margin-bottom: 0px;
+	}
+	#title h2 {
+		font-size: 1.5em;
+		letter-spacing: 0.7vh;
+		margin-left: -20px;
+		margin-top: 10px;
+	}
+	#logo {
+		width: 100%;
+	}
+	#menu.navbar-default .navbar-nav > li > a {
+		font-size: 1.2em;
+		padding-left: 0px;
+		padding-right: 20px;
+	}
+	#copyright,
+	#design {
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	#menu.navbar-default {
+		background-color: rgba(0, 0, 0, 1);
+	}
+	#title h1 {
+		font-size: 2.5em;
+		line-height: 1em;
+		margin-bottom: 0px;
+	}
+	#title h2 {
+		font-size: 0.8em;
+		letter-spacing: 0.02vh;
+		margin-left: -20px;
+		margin-top: 10px;
+		margin-bottom: 40px;
+	}
+	#menu.navbar-default .navbar-nav > li > a {
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#copyright,
+	#design {
+		font-size: .7em;
+		text-align: center;
+	}
+	.navbar-header {
+		text-align: center;
+	}
+	.navbar-toggle {
+		float: none;
+		margin-right: 0px;
+	}
+	#menu.navbar-default .navbar-nav > li > a {
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	#menu.navbar-default {
+		background-color: rgba(0, 0, 0, 1);
+	}
+	#title h1 {
+		font-size: 2.5em;
+		line-height: 1em;
+		margin-bottom: 0px;
+	}
+	#title h2 {
+		font-size: 0.8em;
+		letter-spacing: 0.02vh;
+		margin-left: -20px;
+		margin-top: 10px;
+		margin-bottom: 40px;
+	}
+	#about h1,
+	#contact h1 {
+		margin-top: -160px;
+	}
+	#menu.navbar-default .navbar-nav > li > a {
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#copyright,
+	#design {
+		font-size: .7em;
+		text-align: center;
+	}
+	.navbar-header {
+		text-align: center;
+	}
+	.navbar-toggle {
+		float: none;
+		margin-right: 0px;
+	}
+	#menu.navbar-default .navbar-nav > li > a {
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width: 360px) {
+	#title h1 {
+		font-size: 2.5em;
+		line-height: 1em;
+		margin-bottom: 0px;
+	}
+	#title h2 {
+		font-size: 0.8em;
+		letter-spacing: 0.02vh;
+		margin-left: -20px;
+		margin-top: 10px;
+	}
+	#about h1,
+	#contact h1 {
+		margin-top: -160px;
+	}
+	#menu.navbar-default .navbar-nav > li > a {
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#footer p,
+	a {
+		font-size: .8em;
+	}
+	#copyright,
+	#design {
+		text-align: center;
+	}
+	.navbar-header {
+		text-align: center;
+	}
+	.navbar-toggle {
+		float: none;
+		margin-right: 0px;
+	}
+	#menu.navbar-default .navbar-nav > li > a {
+		padding-bottom: 10px;
+	}
+}
